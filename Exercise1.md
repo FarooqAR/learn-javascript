@@ -12,9 +12,8 @@ var arr = ['This', 'is', 'My', 'first', 'piece', 'OF', 'javaScript'];
 
 // your code
 
-console.log(arr); // it should be now: ["THIS", "is", "MY", "first", "piece", "OF", "javascript"]
-
 ```
+The variable `arr` should be now: `["THIS", "is", "MY", "first", "piece", "OF", "javascript"]`
 
 ## Question 2
 
@@ -26,7 +25,7 @@ var arr = ['heLlO woRlD', 'i like JavaScript', 'my name Is kHaN'];
 // your magic
 
 ```
-`sen1` should now be `['heLlO woRlD', 'I Like Javascript', 'My Name Is Khan']`
+The variable `sen1` should now be `['Hello World', 'I Like Javascript', 'My Name Is Khan']`
 
 
 ## Question 3
@@ -40,7 +39,7 @@ var numberOfVowels = 0;
 // your منتر
 
 ```
-`numberOfVowels` should be `4`. How? There are four vowels in this string: `'e'`, `'o'`, `'A'` and `'e'`
+The variable `numberOfVowels` should be `4`. How? There are four vowels in this string: `'e'`, `'o'`, `'A'` and `'e'`
 
 ## Question 4
 
@@ -62,7 +61,7 @@ The variable `myArr` should be:
 
 We need to verify that we got the correct output in the previous question. Since we are programmers, we have a way! 
 
-Given the previous variable `myArr`, convert each number into its corresponding ASCII character. For e.g: `65` should be converted to `'A'`.
+Given the variable `myArr` in the previous question, convert each number into its corresponding ASCII character. For e.g: `65` should be converted to `'A'`.
 
 ```javascript
 
@@ -81,13 +80,13 @@ We are building an email system for Saylani Mass Training. We need to generate a
 
 An email will not contain any capital alphabets.
 
-A name consists of a First Name and Last Name separated by a space. You have to convert it to an email like this:
+A name consists of a `First Name` and `Last Name` separated by a space. You have to convert it to an email like this:
 
 `Muhammad Ali` -> `muhammad.ali@saylani.org`
 
 `ahsan Bashir` -> `ahsan.bashir@saylani.org`
 
-If the length of First Name is greater than `8`, just use the initial letter of First Name. For example: 
+If the `length` of `First Name`is greater than `8`, just use the initial letter of `First Name`. For example: 
 
 `Azarafrooz Hameed` -> `a.hameed@saylani.org`
 
@@ -101,11 +100,11 @@ var emails = [];
  
 ```
 
-`emails` should be now: 
+The variable `emails` should be now: 
 
 `['muhammad.ali@saylani.org', 'ahsan.bashir@saylani.org', 'a.hameed@saylani.org']`
 
-Bonus Question: Disallow any special characters and produce `'Invalid Email'` instead of an email.
+Bonus Question: Disallow any special characters and produce `'Invalid Email'` instead of an actual email.
 
 
 
