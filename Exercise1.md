@@ -1,5 +1,7 @@
 # Exercise 1
 
+This exercise covers Chapters `1-25` of `A Smarter Way to Learn Javascript`
+
 ## Question 1
 
 Given an array of strings, convert each string into:
