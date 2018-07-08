@@ -1,7 +1,7 @@
 # Exercise 1
 
 Submit your feedback/review of the last lab (if you were present):
-https://github.com/FarooqAR/learn-javascript.git 
+https://goo.gl/forms/b0c4ZPWXTN4s6lE53
 
 This exercise covers Chapters `1-31` of `A Smarter Way to Learn Javascript`
 
