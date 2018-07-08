@@ -66,6 +66,10 @@ The variable `myArr` should be:
 
 We need to verify that we got the correct output in the previous question. Since we are programmers, we have a way! 
 
+Javascript provides a function [String.fromCharCode](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/fromCharCode)
+You will need that!
+
+
 Given the variable `myArr` in the previous question, convert each number into its corresponding ASCII character. For e.g: `65` should be converted to `'A'`.
 
 ```javascript
