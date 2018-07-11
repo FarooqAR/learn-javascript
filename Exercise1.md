@@ -63,8 +63,7 @@ The variable `myArr` should be:
 
 We need to verify that we got the correct output in the previous question. Since we are programmers, we have a way! 
 
-Javascript provides a function [String.fromCharCode](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/fromCharCode)
-You will need that!
+Javascript provides a function [String.fromCharCode](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/fromCharCode) which will be useful here.
 
 
 Given the variable `myArr` in the previous question, convert each number into its corresponding ASCII character. For e.g: `65` should be converted to `'A'`.
@@ -96,7 +95,7 @@ If the `length` of `First Name`is greater than `8`, just use the initial letter 
 
 `Azarafrooz Hameed` -> `a.hameed@saylani.org`
 
-Write a program that accepts a single parameter which is an array of students' names, and outputs an array of emails.
+Write a program that converts an array of students' names into an array of valid emails.
 
 ```javascript
 
