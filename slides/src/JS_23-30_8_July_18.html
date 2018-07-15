@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Javascript | 8 July</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./theme1.css">
+  </head>
+  <body>
+<!-- 
+  Topics:
+  - indexOf
+  - lastIndexOf
+  - charAt
+  - ASCII
+  - charCodeAt
+  - replace
+  - Math
+  - Rounding numbers
+  - parseInt/Float
+  - coercion
+ -->
+
+    <textarea id="source">
+
+class: center, middle
+# Javascript Lab (8 July 18) 
+## Farooq AR
+
+---
+
+
+# indexOf(string, [startIndex])
+
+```javascript
+var message = 'Hello World';
+var index = message.indexOf('W');
+console.log(index); // ??
+```
+
+It gives us the index of first occurrence of the specified value, -1 if no occurrence found.
+
+```javascript
+message.indexOf('W', 6); // ??
+```
+```javascript
+message.indexOf('W', 7); // ??
+```
+---
+# lastIndexOf(str, [startIndex])
+
+```javascript
+var msg = 'Hello World';
+var lastIndex = msg.lastIndexOf('orld');
+console.log(lastIndex); // ??
+```
+
+It is same as `indexOf` except it starts from the right.
+
+```javascript
+msg.lastIndexOf('o', 6); // ??
+```
+```javascript
+msg.lastIndexOf('o', 0); // ??
+```
+---
+
+# charAt(index)
+
+```javascript
+var str = 'Hello World';
+str.charAt(6); // 'W'
+str.charAt(100); // '' <- empty string
+```
+A string is just a sequence of characters, therefore, I can also do 
+```javascript
+str[6]; // 'W'
+```
+What is the difference b/w these two ways which give the same result?
+
+---
+# How to represent characters by integers?
+
+Remember, computers only understand 0s and 1s.
+
+Welcome to ASCII (American Standard Code for Information Interchange).
+
+This standard describes a set of codes for individual characters.
+
+---
+
+Here are some of ASCII codes and their values:
+```
+ASCII Code | value
+65         | 'A'
+66         | 'B'
+97         | 'a'
+```
+These numbers are then converted into binary to be stored on your computer.
+
+In Javascript, there is a way to handle ASCII codes
+
+---
+
+# charCodeAt(index)
+
+Converts the character at the given index into its ASCII code.
+
+```javascript
+'Avenfield'.charCodeAt(0); // ??
+```
+
+```javascript
+'Panama'.charCodeAt(5); // ??
+```
+
+How to convert ASCII code to its value? Find it out yourself.
+
+---
+
+# replace(pattern, replacement)
+
+```javascript
+var str = 'Hello World';
+str.replace('Hello', 'Bye'); // Bye World 
+```
+
+```javascript
+var str = 'Hello Hello World';
+str.replace('Hello', 'Bye'); // ?? 
+```
+It will only replace the first occurrence of the given string.
+
+There is a way to replace all the `'Hello'`s with `'Bye'`s. Regular Expressions!
+---
+
+# Doing Math in Javascript
+
+How to round numbers? How to find the square or cube of a number?
+How to perform trig functions such as `sine`, `cosine`, `tan`?
+How to find the value of `pi`?
+
+All the math functions and constants (like `pi`) in Javascript start with 
+```javascript
+Math.
+```
+For example:
+`Math.sin()`, `Math.PI` etc.
+
+---
+# Rounding Numbers
+
+To round off a number to its nearest integer:
+```javascript
+Math.round(3.4); // 3
+Math.round(3.6); // 4
+Math.round(3.5); // ??
+```
+To round off a number to its nearest bigger integer:
+```javascript
+Math.ceil(3.4); // 4
+Math.ceil(3.000000001); // 4
+Math.ceil(-2.9); // ??
+```
+---
+# Rounding Numbers (contd.)
+To round off a number to its nearest smaller integer:
+```javascript
+Math.floor(3.9999999); // 3
+Math.floor(3.1); // 3
+Math.floor(-5.1); // ??
+```
+---
+# Fixing to a certain decimal point
+What if you want a big decimal number to be fixed to a certain length? 
+```javascript
+var num = 2.45335;
+num.toFixed(2); // '2.45' <- a string
+```
+---
+# Generating Random Numbers
+
+`Math.random()` gives a random 16-place number between 0 and 1 (exclusive)
+
+```javascript
+Math.random() * 5;
+``` 
+This will deliver a single number anywhere between `0.0000000000000000` to `4.9999999999999999`
+
+---
+# Converting strings to numbers
+
+## parseFloat(str)
+
+```javascript
+parseFloat('2.345'); // 2.345
+parseFloat('121.23 Rs'); // 121.23
+```
+
+## parseInt(str)
+
+```javascript
+parseInt('10 million pounds'); // 10
+parseInt('2.345'); // 2
+parseInt('121.23 Rs'); // 121
+```
+---
+# Coercion
+
+Conversion of a value of one type to another as a side effect of an operation is called coercion.
+
+Confused? Consider this:
+
+```javascript
+'4' - 3
+```
+
+What will happen? The minus operator will convert the string `'4'` to a number `4` and then perform subtraction. This is called coercion!
+
+---
+
+# Types of Coercion
+
+There are two types coercion:
+1. Implicit 
+2. Explicit
+
+---
+# Implicit Coercion
+Done internally by Javascript. We just saw its example in the previous slide.
+
+The minus, multiply, divide and modulo operators will alway coerce their operands to numbers.
+
+But what if they cannot do that?:
+```javascript
+'Hello' - 4; // NaN <- Not A Number
+100 * 'Hello'; // NaN
+```
+---
+# Implicit Coercion: The plus (+) operator
+
+The plus operator follow these two (for convenience) rules:
+
+1- If one or both of its operands is `string`, perform concatenation 
+```javascript
+'Hello' + 2; // 'Hello2'
+'2' + '2'; // ??
+```
+2- Otherwise do simple addition
+
+---
+
+# Explicit Coercion
+Coercing values manually to a type is called explicit coercion.
+```javascript
+var num = 54;
+num.toString(); // '54'
+```
+```javascript
+Number('54'); // 54
+```
+
+We will talk about it more deeply in Advanced Javascript. Hopefully.
+</textarea>
+    <script src="../remark-latest.min.js">
+    </script>
+    <script>
+      var slideshow = remark.create();
+    </script>
+  </body>
+</html>

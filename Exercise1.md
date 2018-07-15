@@ -45,7 +45,7 @@ The variable `numberOfVowels` should be `4`. How? There are four vowels in this 
 
 ## Question 4
 
-Given a string, push the ASCII code of each alphabet (`A` to `Z` or `a` to `z`) to an array. Disregard the character which is not an alphabet.
+Given a string, push the ASCII code of each alphabet (`A` to `Z` or `a` to `z`) to an array. Disregard the character which is not an alphabet. Only one loop is allowed.
 
 ```javascript
 

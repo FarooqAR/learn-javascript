@@ -1,0 +1,20 @@
+@import url(../fonts/Josefin_Sans/include.css);
+@import url(../fonts/Open_Sans/include.css);
+@import url(../fonts/Consolas/include.css);
+body { 
+  font-family: 'OpenSans'; 
+}
+h1, h2, h3 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: normal;
+}
+* {
+  font-size: 32px;
+}
+.remark-code, .remark-inline-code { font-family: 'Consolas', 'Courier New', Courier, monospace; }
+.remark-inline-code {
+  background-color: #F0F0F0;
+  padding: .3em;
+  display: inline-block;
+  margin-top: 1px;
+}

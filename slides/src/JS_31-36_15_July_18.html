@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Javascript | 15 July</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="./theme1.css">
+</head>
+
+<body>
+  <!-- 
+  Topics:
+  - Date
+ -->
+
+  <textarea id="source">
+
+class: center, middle
+# Javascript Lab (15 July 18) 
+## Farooq AR
+
+---
+
+# Date
+
+To get the local time and date, we call the `Date()` function with the `new` keyword.
+
+```javascript
+var date = new Date();
+console.log(date); 
+// Tue Jul 10 2018 22:40:48 GMT+0500 (Pakistan Standard Time)
+```
+
+The `new` keyword does some magic which will be discussed in Advanced JS.
+
+---
+
+# What you can do with Date?
+
+There are many useful functions you can perform with `new Date()`, for example:
+
+```javascript
+var date = new Date();
+```
+
+`date.getDate()` will give you an integer from `1` to `31`, telling the day of the month.
+
+Explore other functions like `getDay`, `getHours`, `getYear` etc. on your own.
+
+---
+
+# Timestamp
+
+The number of milliseconds passed since 1st Jan 1970. It helps us calculate difference between two dates.
+
+You can get the timestamp at any given date by using `date.getTime()`, its result will look something like:
+```javascript
+1531324146714
+```
+
+---
+
+# Setting date and time
+
+One way is to pass a valid date string directly into `Date()`, like this:
+```javascript
+new Date('January 01, 1970')
+```
+You can also pass the timestamp:
+```javascript
+new Date(1531324146714)
+```
+Functions like `setMonth`, `setYear`, `setHours` etc. can be used to set different aspects of date individually.
+
+---
+
+# Functions
+
+A set of instructions that you can re use again and again to avoiding repitition. Suppose I want to 
+capitalize some strings and push them into an array:
+```javascript
+var someArray = [];
+someArray.push('saylani'.toUpperCase());
+```
+But It would be messy and tedious to do that for every string. We can use functions to re use the above
+code.
+
+---
+
+# Functions
+
+```javascript
+function capAndPush ( str ) {
+  someArray.push(str.toUpperCase());
+}
+```
+Now, I just have to provide this function a string using the syntax below:
+```javascript
+capAndPush('saylani');
+capAndPush('hello');
+capAndPush('world');
+```
+
+---
+
+# Functions
+
+A function is made up of four things:
+1. A `function` keyword
+2. A function name. E.g: `capAndPush` in previous slide.
+3. An input (also called a parameter).E.g:  `str` in previous slide.
+4. Some code inside curly braces `{}`. Also called a block.
+
+Let's go back and see the syntax again.
+
+---
+
+# Function Parameters
+
+Consider this function:
+
+```javascript
+function sayHello ( name, message ) {
+  alert('Hi ' + name + ', ' + message);
+}
+```
+
+`name` and `message` are called parameters.
+Think of them as normal variables. These variables
+get assigned the values you pass when you call the function like this:
+```javascript
+sayHello ('Farooq', 'Welcome to JS!');
+```
+
+---
+
+What if you don't pass the values? Like this?
+```javascript
+sayHello()
+```
+The alert will show:
+`
+Hi undefined, undefined
+`
+
+In Javascript, function parameters are optional. If you don't pass the value,
+they get `undefined`
+
+In the previous slide, `'Farooq'` and `'Welcome to JS!'` are also called 
+arguments.
+
+---
+
+# Function: Output
+
+Your function can also give back a value:
+
+```javascript
+function getAge () {
+  return 40;
+}
+```
+```javascript
+var age = getAge();
+console.log(age); // 40
+```
+You have seen functions like `capAndPush` and `sayHello` in the previous slides. 
+What did they return?
+
+---
+
+```javascript
+function uselessFunction ( name ) {
+  return name;
+}
+```
+```javascript
+uselessFunction('Saylani'); // ??
+```
+What does the above function call returns?
+
+Okay, let's get a little tough. What does this return?
+
+```javascript
+uselessFunction(uselessFunction(34 - 4));
+```
+</textarea>
+  <script src="../remark-latest.min.js">
+  </script>
+  <script>
+    var slideshow = remark.create();
+  </script>
+</body>
+
+</html>
