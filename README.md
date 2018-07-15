@@ -4,7 +4,7 @@ These exercises were particularly made for a web and mobile development batch at
 
 ## Slides
 
-You have to download the whole `slides` folder to see them. 
+You have to download the whole `slides` folder for them to work. 
 
 ## Contributing
 
