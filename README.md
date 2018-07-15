@@ -2,6 +2,10 @@
 
 These exercises were particularly made for a web and mobile development batch at Saylani.
 
+## Slides
+
+You have to download the whole `slides` folder to see them. 
+
 ## Contributing
 
 If you found a mistake in a question or want to contribute to the questions in any way, just send a Pull Request!
