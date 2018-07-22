@@ -1,10 +1,10 @@
 var arr = ['heLlO woRlD', 'i like JavaScript', 'my name Is kHaN'];
 var capArr = [];
-for(let j = 0; j < arr.length; j++){
-	var str = arr[j];
+for (var j = 0; j < arr.length; j++) {
+    var str = arr[j];
     var cap = '';
-	
-    for(let i = 0; i < str.length; i++){
+
+    for (var i = 0; i < str.length; i++) {
         if (i === 0 || str[i - 1] === ' ') {
             cap += str[i].toUpperCase();
         }
@@ -12,6 +12,6 @@ for(let j = 0; j < arr.length; j++){
             cap += str[i].toLowerCase();
         }
     }
-	
-	capArr.push(cap);
+
+    capArr.push(cap);
 }
